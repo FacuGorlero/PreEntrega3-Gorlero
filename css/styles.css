@@ -1,0 +1,89 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+#fondo1 {
+  background-image: url(../assets/imagenes/fondo4.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-family: "Dancing Script";
+  color: white;
+}
+.header h1 {
+  font-size: 60px;
+}
+
+.navbar {
+  border-top: gray 1px solid;
+  border-bottom: gray 1px solid;
+}
+.navbar .navbar-collapse {
+  justify-content: center;
+  font-family: "Varela Round", sans-serif;
+}
+
+.btn-primary {
+  --bs-btn-color: black;
+  --bs-btn-bg: white;
+  --bs-btn-border-color: white;
+  --bs-btn-hover-color: white;
+  --bs-btn-hover-bg: gray;
+  --bs-btn-hover-border-color: gray;
+}
+
+.button {
+  display: flex;
+  padding-top: 20%;
+  padding-left: 10%;
+  justify-content: left;
+}
+
+body {
+  padding-bottom: 10em;
+  position: relative;
+  min-height: 100vh;
+}
+
+footer {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  padding: 1em 0;
+  text-align: center;
+}
+footer .iconos-redes-sociales a {
+  color: azure;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  padding: 2px;
+  margin: 5px;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid white;
+  border-radius: 50%;
+  transition: all 0.2 e;
+}
+footer .iconos-redes-sociales a:hover {
+  background-color: white;
+  border: 2px solid black;
+}
+footer .iconos-redes-sociales a:hover i {
+  color: black;
+}
+
+.carousel {
+  margin-top: 10%;
+}
+
+/*# sourceMappingURL=styles.css.map */
