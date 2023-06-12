@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-#fondo1 {
+.fondo1 {
   background-image: url(../assets/imagenes/fondo4.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -84,6 +84,110 @@ footer .iconos-redes-sociales a:hover i {
 
 .carousel {
   margin-top: 10%;
+}
+
+.locales .carousel-inner img {
+  height: 500px;
+}
+
+@media (max-width: 767px) {
+  .locales .carousel-inner img {
+    height: 400px;
+    width: 400px;
+  }
+}
+@media (max-height: 850px) {
+  .locales .carousel-inner img {
+    height: 400px;
+    width: 300px;
+  }
+}
+@media (max-height: 760px) {
+  .locales .carousel-inner img {
+    height: 250px;
+    width: 200px;
+  }
+}
+@media (max-width: 991px) {
+  .navbar {
+    border-top: none;
+    border-bottom: none;
+  }
+}
+@media (max-height: 731px) {
+  .locales .carousel-inner img {
+    height: 150px;
+    width: 100px;
+  }
+}
+.container-galeria {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 20px;
+  grid-gap: 10px;
+}
+.container-galeria .imagen-galeria {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.container-galeria .galeria-item:nth-child(2) {
+  grid-column-start: span 2;
+}
+.container-galeria .galeria-item:nth-child(7) {
+  grid-row-start: span 2;
+  grid-column-start: span 2;
+}
+
+.listaprecios {
+  margin-top: 3%;
+  display: inline-block;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  align-items: center;
+  font-size: 20px;
+  font-family: "Varela Round", sans-serif;
+}
+
+.Precios {
+  font-size: 60px;
+}
+
+@media (max-width: 767px) {
+  .listaprecios {
+    font-size: 10px;
+    margin-top: 1%;
+  }
+  .Precios {
+    font-size: 40px;
+  }
+}
+@media (max-height: 700px) {
+  .listaprecios {
+    font-size: 5px;
+    margin-top: 0%;
+  }
+  .Precios {
+    font-size: 30px;
+  }
+}
+.galeriatienda {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  color: black;
+  font-size: "Varela Round", sans-serif;
+}
+.galeriatienda .caja img {
+  width: 220px;
+  height: 280px;
+  border-radius: 30px;
+}
+.galeriatienda .caja {
+  margin: 15px;
+  text-align: center;
 }
 
 /*# sourceMappingURL=styles.css.map */
